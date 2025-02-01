@@ -1,0 +1,94 @@
+[
+  {
+    "title": "Classic Margherita Pizza",
+    "description": "A timeless Italian pizza with fresh tomato sauce, mozzarella cheese, and basil.",
+    "ingredients": [
+      "2 cups all-purpose flour",
+      "1 tsp salt",
+      "3/4 cup warm water",
+      "1 tbsp olive oil",
+      "1/2 cup tomato sauce",
+      "1 cup mozzarella cheese",
+      "Fresh basil leaves"
+    ],
+    "formula": [
+      "Preheat oven to 500°F (260°C).",
+      "Mix flour, salt, water, and olive oil to form a dough. Knead for 10 minutes.",
+      "Roll out dough, spread tomato sauce, and add mozzarella cheese.",
+      "Bake for 7-10 minutes or until the crust is golden brown.",
+      "Garnish with fresh basil leaves before serving."
+    ],
+    "category": "Pizza",
+    "chefname": "Chef Mario",
+    "timer": "30 minutes",
+    "viewCount": 1500,
+    "image": "https://example.com/images/margherita-pizza.jpg",
+    "rating": 4.8,
+    "reviews": [
+      {
+        "email": "john.doe@example.com",
+        "rating": 5,
+        "comment": "The best homemade pizza I've ever made!",
+        "upvote": 25,
+        "downvote": 2,
+        "follow": true,
+        "image": "https://example.com/images/reviewer1.jpg"
+      },
+      {
+        "email": "jane.smith@example.com",
+        "rating": 4,
+        "comment": "Great recipe, but I added oregano for extra flavor.",
+        "upvote": 18,
+        "downvote": 1,
+        "follow": false,
+        "image": "https://example.com/images/reviewer2.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Spaghetti Carbonara",
+    "description": "A classic Roman pasta dish made with eggs, cheese, pancetta, and black pepper.",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta",
+      "2 large eggs",
+      "50g Parmesan cheese, grated",
+      "2 cloves garlic, minced",
+      "1 tsp black pepper",
+      "Salt to taste"
+    ],
+    "formula": [
+      "Cook spaghetti in salted boiling water until al dente.",
+      "Fry pancetta in a pan until crispy. Add garlic and cook for 1 minute.",
+      "Whisk eggs with Parmesan cheese in a bowl.",
+      "Combine hot spaghetti with pancetta and garlic. Remove from heat and mix in the egg mixture quickly.",
+      "Season with black pepper and serve immediately."
+    ],
+    "category": "Pasta",
+    "chefname": "Chef Lucia",
+    "timer": "20 minutes",
+    "viewCount": 2000,
+    "image": "https://example.com/images/spaghetti-carbonara.jpg",
+    "rating": 4.7,
+    "reviews": [
+      {
+        "email": "mike.brown@example.com",
+        "rating": 5,
+        "comment": "Simple and delicious! Just like in Rome.",
+        "upvote": 30,
+        "downvote": 0,
+        "follow": true,
+        "image": "https://example.com/images/reviewer3.jpg"
+      },
+      {
+        "email": "emma.green@example.com",
+        "rating": 4,
+        "comment": "Great recipe, but I used bacon instead of pancetta.",
+        "upvote": 20,
+        "downvote": 3,
+        "follow": true,
+        "image": "https://example.com/images/reviewer4.jpg"
+      }
+    ]
+  }
+]
