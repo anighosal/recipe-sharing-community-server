@@ -1,15 +1,19 @@
 import { z } from "zod";
 
-const createRecipeZodSchema = z.object({
-  title: z.string().nonempty("Title is required"),
-  description: z.string().nonempty("Description is required"),
-  releaseDate: z.string().min(1),
-  ingredients: z.array(z.string()).nonempty("Ingredients are required"),
-  formula: z.array(z.string()).nonempty("Formula is required"),
-  category: z.string().nonempty("Category is required"),
-  chefname: z.string().nonempty("Chef name is required"),
-  timer: z.string().nonempty("Timer is required"),
-  image: z.string().nonempty("Image URL is required"),
+export const createRecipeZodSchema = z.object({
+  title: z.string().min(1, "Title is required"),
+  description: z.string().min(1, "Description is required"),
+  releaseDate: z.date().refine((date) => !isNaN(date.getTime()), {
+    message: "Invalid date format",
+  }),
+  ingredients: z.array(z.string()).min(1, "Ingredients are required"),
+  formula: z.array(z.string()).min(1, "Formula steps are required"),
+  category: z.string().min(1, "Category is required"),
+  chefname: z.string().min(1, "Chef name is required"),
+  image: z.string().min(1, "Image URL is required"),
+  timer: z.string().optional(),
+  viewCount: z.number().optional(),
+  totalRating: z.number().optional(),
 });
 
 const updateRecipeZodSchema = z.object({

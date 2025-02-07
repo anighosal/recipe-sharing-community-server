@@ -19,6 +19,8 @@ const recipeSchema = new Schema<TRecipe, TRecipeModel, TRecipeMethods>(
     description: { type: String, required: true },
     releaseDate: {
       type: Date,
+      required: true,
+      default: () => new Date(),
     },
     ingredients: { type: [String], required: true },
     formula: { type: [String], required: true },
